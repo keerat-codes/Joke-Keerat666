@@ -6,6 +6,8 @@ const PORT = 8000;
 
 require('dotenv').config();
 
+const JokeRoute = require('./routes/Joke');
+app.use('Joke', JokeRoute);
 app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
